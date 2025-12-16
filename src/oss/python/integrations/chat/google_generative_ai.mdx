@@ -920,8 +920,8 @@ For Gemini 3+ models, use `thinking_level` to control reasoning depth. Some mode
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-3-flash-preview",
-    thinking_level="medium",  # [!code highlight]
+    model="gemini-3-pro-preview",
+    thinking_level="low",  # [!code highlight]
 )
 
 response = llm.invoke("How many O's are in Google?")
