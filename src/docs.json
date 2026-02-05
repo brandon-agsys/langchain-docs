@@ -924,6 +924,7 @@
                        "group": "Access control & Authentication",
                        "pages": [
                         "langsmith/rbac",
+                        "langsmith/abac",
                          "langsmith/organization-workspace-operations",
                          "langsmith/authentication-methods"
                        ]
