@@ -903,14 +903,44 @@
           ]
         },
         {
-          "product": "Open source",
+          "product": "Deep Agents",
           "icon": "box-open",
-          "description": "Deep Agents, LangChain, and LangGraph",
+          "description": "Build agents with our open source packages",
           "dropdowns": [
             {
               "dropdown": "Python",
               "icon": "python",
               "tabs": [
+                {
+                  "tab": "Deep Agents",
+                  "pages": [
+                    "oss/python/deepagents/overview",
+                    {
+                      "group": "Get started",
+                      "pages": [
+                        "oss/python/deepagents/quickstart",
+                        "oss/python/deepagents/customization"
+                      ]
+                    },
+                    {
+                      "group": "Core capabilities",
+                      "pages": [
+                        "oss/python/deepagents/harness",
+                        "oss/python/deepagents/backends",
+                        "oss/python/deepagents/subagents",
+                        "oss/python/deepagents/human-in-the-loop",
+                        "oss/python/deepagents/long-term-memory",
+                        "oss/python/deepagents/skills"
+                      ]
+                    },
+                    {
+                      "group": "Command line interface",
+                      "pages": [
+                        "oss/python/deepagents/cli"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "tab": "LangChain",
                   "pages": [
@@ -1048,36 +1078,6 @@
                         },
                           "oss/python/langgraph/pregel"
                           ]
-                    }
-                  ]
-                },
-                {
-                  "tab": "Deep Agents",
-                  "pages": [
-                    "oss/python/deepagents/overview",
-                    {
-                      "group": "Get started",
-                      "pages": [
-                        "oss/python/deepagents/quickstart",
-                        "oss/python/deepagents/customization"
-                      ]
-                    },
-                    {
-                      "group": "Core capabilities",
-                      "pages": [
-                        "oss/python/deepagents/harness",
-                        "oss/python/deepagents/backends",
-                        "oss/python/deepagents/subagents",
-                        "oss/python/deepagents/human-in-the-loop",
-                        "oss/python/deepagents/long-term-memory",
-                        "oss/python/deepagents/skills"
-                      ]
-                    },
-                    {
-                      "group": "Command line interface",
-                      "pages": [
-                        "oss/python/deepagents/cli"
-                      ]
                     }
                   ]
                 },
@@ -1258,6 +1258,36 @@
               "icon": "square-js",
               "tabs": [
                 {
+                  "tab": "Deep Agents",
+                  "pages": [
+                    "oss/javascript/deepagents/overview",
+                    {
+                      "group": "Get started",
+                      "pages": [
+                        "oss/javascript/deepagents/quickstart",
+                        "oss/javascript/deepagents/customization"
+                      ]
+                    },
+                    {
+                      "group": "Core capabilities",
+                      "pages": [
+                        "oss/javascript/deepagents/harness",
+                        "oss/javascript/deepagents/backends",
+                        "oss/javascript/deepagents/subagents",
+                        "oss/javascript/deepagents/human-in-the-loop",
+                        "oss/javascript/deepagents/long-term-memory",
+                        "oss/javascript/deepagents/skills"
+                      ]
+                    },
+                    {
+                      "group": "Deep Agents CLI",
+                      "pages": [
+                        "oss/javascript/deepagents/cli"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "tab": "LangChain",
                   "pages": [
                     "oss/javascript/langchain/overview",
@@ -1393,36 +1423,6 @@
                           ]
                         },
                         "oss/javascript/langgraph/pregel"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tab": "Deep Agents",
-                  "pages": [
-                    "oss/javascript/deepagents/overview",
-                    {
-                      "group": "Get started",
-                      "pages": [
-                        "oss/javascript/deepagents/quickstart",
-                        "oss/javascript/deepagents/customization"
-                      ]
-                    },
-                    {
-                      "group": "Core capabilities",
-                      "pages": [
-                        "oss/javascript/deepagents/harness",
-                        "oss/javascript/deepagents/backends",
-                        "oss/javascript/deepagents/subagents",
-                        "oss/javascript/deepagents/human-in-the-loop",
-                        "oss/javascript/deepagents/long-term-memory",
-                        "oss/javascript/deepagents/skills"
-                      ]
-                    },
-                    {
-                      "group": "Deep Agents CLI",
-                      "pages": [
-                        "oss/javascript/deepagents/cli"
                       ]
                     }
                   ]
