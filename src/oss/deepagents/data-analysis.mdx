@@ -80,22 +80,36 @@ os.environ["LANGSMITH_API_KEY"] = getpass.getpass()
 
 Deep agents use [backends](/oss/deepagents/backends) to execute code in sandboxed environments.
 
+For other sandbox providers and setup options, see [Sandboxes](/oss/deepagents/sandboxes).
+
 <Tabs>
 <Tab title="Daytona Sandbox">
 We can create a sandbox easily using the `langchain-daytona` package:
 
-```python
-from langchain_daytona import DaytonaProvider
+<CodeGroup>
+```bash pip
+pip install langchain-daytona
+```
 
-provider = DaytonaProvider()
-backend = provider.get_or_create()
+```bash uv
+uv add langchain-daytona
+```
+</CodeGroup>
+
+```python
+from daytona import Daytona
+
+from langchain_daytona import DaytonaSandbox
+
+sandbox = Daytona().create()
+backend = DaytonaSandbox(sandbox=sandbox)
 ```
 
 Verify the sandbox is ready:
 ```python
 result = backend.execute("echo ready")
 print(result)
-# ExecuteResponse(exit_code=0, result='ready', ...)
+# ExecuteResponse(output='ready', exit_code=0, ...)
 ```
 </Tab>
 <Tab title="Local shell">
@@ -136,7 +150,7 @@ csv_bytes = text_buf.getvalue().encode("utf-8")
 text_buf.close()
 
 # Upload to backend
-backend.upload_files([("./data/sales_data.csv", csv_bytes)])
+backend.upload_files([("/home/daytona/data/sales_data.csv", csv_bytes)])
 ```
 
 ## Implement custom tools
