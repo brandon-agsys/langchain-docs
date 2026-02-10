@@ -12,6 +12,8 @@ import BackendFilesystem from '/snippets/backend-filesystem.mdx';
 import BackendStore from '/snippets/backend-store.mdx';
 import BackendComposite from '/snippets/backend-composite.mdx';
 import SubagentBasic from '/snippets/subagent-basic.mdx';
+import SandboxBasicPy from '/snippets/deepagents-sandbox-basic-py.mdx';
+import SandboxBasicJs from '/snippets/deepagents-sandbox-basic-js.mdx';
 
 :::python
 `create_deep_agent` has the following core configuration options:
@@ -351,6 +353,23 @@ If you are using [skills](#skills) or [memory](#memory), you must add the expect
 </Tabs>
 
 For more information, see [Backends](/oss/deepagents/backends).
+
+### Sandboxes
+
+Sandboxes are specialized [backends](/oss/deepagents/backends) that run agent code in an isolated environment with their own filesystem and an `execute` tool for shell commands.
+Use a sandbox backend when you want your deep agent to write files, install dependencies, and run commands without changing anything on your local machine.
+
+You configure sandboxes by passing a sandbox backend to `backend` when creating your deep agent:
+
+:::python
+<SandboxBasicPy />
+:::
+
+:::js
+<SandboxBasicJs />
+:::
+
+For more information, see [Sandboxes](/oss/deepagents/sandboxes).
 
 ## Human-in-the-loop
 
